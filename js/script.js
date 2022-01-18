@@ -19,9 +19,9 @@ const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)
 
 
 // RECUPERO LA GRIGLIA
-const select = document.getElementById("choices");
+const select = document.getElementById("diff");
 const grid = document.getElementById("grid");
-const button = document.getElementById("start");
+const button = document.getElementById("play");
 
 function start() {
     // Cambio il tasto del bottone e lo chiamo ricomincia
@@ -37,10 +37,10 @@ function start() {
     let columns;
 
     switch (select.value) {
-        case "2":
+        case "diff2":
             columns = 9;
             break;
-        case "3":
+        case "diff3":
             columns = 7;
             break;
         default:
